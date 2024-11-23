@@ -44,7 +44,6 @@ A sophisticated notepad application featuring real-time AI-powered suggestions p
 
 ### System Requirements
 - Python 3.8 or higher
-- 4GB RAM minimum (8GB recommended)
 - Ollama installed and running
 - Windows/Linux/MacOS supported
 
