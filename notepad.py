@@ -10,7 +10,7 @@ import time
 class AINotePad:
     def __init__(self):
         self.root = ThemedTk(theme="arc")
-        self.root.title("AI-Powered Notepad")
+        self.root.title("Notepad")
         self.root.geometry("900x600")
 
         # Configure main container with grid
