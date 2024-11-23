@@ -154,9 +154,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Ollama team for providing the AI models
-- TTkthemes for the modern UI components
-- All contributors and users of this project
