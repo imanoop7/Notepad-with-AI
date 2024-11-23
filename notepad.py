@@ -67,7 +67,7 @@ class AINotePad:
 
         # Ollama API settings
         self.ollama_url = "http://localhost:11434/api/generate"
-        self.model = "tinyllama"  # Default model
+        self.model = "phi3"  # Default model
         self.last_request_time = 0
         self.suggestion_delay = 1.0  # Delay in seconds
         self.last_text = ""
@@ -138,7 +138,7 @@ class AINotePad:
                 messagebox.showerror("Error", f"Couldn't save file: {str(e)}")
 
     def change_model(self):
-        models = ["tinyllama", "mistral", "llama2", "codellama", "neural-chat"]
+        models = ["tinyllama", "mistral", "llama2", "codellama", "gemma","qwen","qwen2","phi3","llama3","gemma2","codellama"]
         dialog = tk.Toplevel(self.root)
         dialog.title("Select AI Model")
         dialog.geometry("200x250")
@@ -183,7 +183,7 @@ class AINotePad:
             response = requests.post(
                 self.ollama_url, 
                 json=data, 
-                timeout=5  # Reduced timeout
+                timeout=3  # Reduced timeout
             )
             print(f"Response status: {response.status_code}")
             
@@ -291,6 +291,7 @@ class AINotePad:
                 self.suggestion_window.withdraw()
                 return "break"  # Prevent default Tab behavior
         return None
+
     def run(self):
         self.root.mainloop()
 
