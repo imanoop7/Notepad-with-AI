@@ -67,7 +67,7 @@ class AINotePad:
 
         # Ollama API settings
         self.ollama_url = "http://localhost:11434/api/generate"
-        self.model = "phi3"  # Default model
+        self.model = "tinyllama"  # Default model
         self.last_request_time = 0
         self.suggestion_delay = 1.0  # Delay in seconds
         self.last_text = ""
@@ -103,7 +103,7 @@ class AINotePad:
 
         # AI Menu
         ai_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="AI", menu=ai_menu)
+        menubar.add_cascade(label="Model", menu=ai_menu)
         ai_menu.add_command(label="Change Model", command=self.change_model)
 
     def new_file(self):
